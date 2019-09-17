@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             environment {
                 CONTROLM_CREDS = credentials('controlm-testserver-creds')
-                ENDPOINT = 'https://localhost:8446/automation-api'
+                ENDPOINT = 'https://localhost:8443/automation-api'
             }
             steps {
                 sh '''
